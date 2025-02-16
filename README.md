@@ -1,4 +1,5 @@
  📝 Paste App
+ 
 A simple yet powerful Paste App built with React, Redux, and LocalStorage that lets you effortlessly create, edit, copy, and manage your text snippets in one place! 🖋️✨
 
 ## 🚀 Live Demo  
