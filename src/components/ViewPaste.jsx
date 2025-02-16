@@ -17,10 +17,10 @@ const ViewPaste = () => {
   }
 
   return (
-    <div className="bg-gradient-to-r from-indigo-500 to-blue-600 p-6 rounded-2xl shadow-lg max-w-3xl mx-auto">
-      <div className="flex flex-row gap-7 justify-between">
+    <div className="bg-gradient-to-r from-indigo-500 to-blue-600 p-4 sm:p-6 rounded-2xl shadow-lg max-w-3xl mx-auto w-full">
+      <div className="flex flex-col gap-4">
         <input
-          className="p-4 rounded-2xl w-full border border-blue-300 text-black font-medium bg-blue-50 opacity-90 cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="p-2 md:p-4 rounded-xl md:rounded-2xl w-full border border-blue-300 text-black font-normal md:font-medium bg-blue-50 opacity-90 cursor-not-allowed text-sm md:text-base"
           type="text"
           placeholder="Enter title here"
           value={paste.title}
@@ -28,16 +28,16 @@ const ViewPaste = () => {
         />
       </div>
 
-      <div className="mt-4">
+      <div className="mt-3 md:mt-4">
         <textarea
-          className="rounded-2xl w-full p-4 border border-blue-300 text-black font-medium bg-blue-50 opacity-90 cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="rounded-xl md:rounded-2xl w-full p-2 md:p-4 border border-blue-300 text-black font-normal md:font-medium bg-blue-50 opacity-90 cursor-not-allowed text-sm md:text-base"
           value={paste.value}
           placeholder="Enter the text here"
           disabled
           rows={12}
         />
       </div>
-      <div className="mt-4 text-white">
+      <div className="mt-3 md:mt-4 text-white text-xs md:text-sm">
         <small>Created at: {paste.createdAt}</small>
       </div>
     </div>

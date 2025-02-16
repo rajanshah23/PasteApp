@@ -75,9 +75,9 @@ const Paste = () => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-indigo-500 to-blue-600 p-6 rounded-2xl shadow-lg max-w-3xl mx-auto">
+    <div className="bg-gradient-to-r from-indigo-500 to-blue-600 p-4 sm:p-6 rounded-2xl shadow-lg max-w-4xl mx-auto w-full">
       <input
-        className="p-3 rounded-2xl w-full mt-3 border border-gray-300 shadow-sm text-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+        className="p-2 md:p-3 rounded-lg md:rounded-xl w-full border border-gray-300 shadow-sm text-sm sm:text-base md:text-lg focus:outline-none"
         type="search"
         placeholder="Search pastes..."
         value={searchTerm}
@@ -86,53 +86,63 @@ const Paste = () => {
 
       <div className="flex flex-col gap-6 mt-6">
         {filteredData.length === 0 ? (
-          <div className="text-center text-gray-500 py-4">
+          <div className="flex flex-col gap-3 md:gap-4 mt-4 md:mt-6">
             No pastes found matching your search
           </div>
         ) : (
           filteredData.map((paste) => (
             <div
               key={paste.id}
-              className="bg-gray-100 border border-gray-200 p-4 rounded-2xl shadow-md"
+              className="bg-gray-100 border border-gray-200 p-3 md:p-4 rounded-xl md:rounded-2xl shadow-md w-full"
             >
-              <div className="font-semibold text-xl text-black mb-3">
+              <div className="font-medium md:font-semibold text-base md:text-lg text-black mb-2 md:mb-3">
                 {paste.title}
               </div>
 
-              <div className="flex flex-wrap gap-4 justify-center">
+              <div className="grid grid-cols-2 gap-2 sm:flex sm:flex-wrap justify-center sm:justify-start">
                 <ActionButton
                   label="Edit"
+                  className="text-xs sm:text-sm"
+                iconSize={14}
                   onClick={() => navigate(`/?pasteId=${paste.id}`)}
                   bgColor="blue"
                   icon={FaEdit}
                 />
                 <ActionButton
                   label="View"
+                  className="text-xs sm:text-sm"
+                iconSize={14}
                   onClick={() => navigate(`/pastes/${paste.id}`)}
                   bgColor="green"
                   icon={FaEye}
                 />
                 <ActionButton
                   label="Delete"
+                  className="text-xs sm:text-sm"
+                iconSize={14}
                   onClick={() => handleDelete(paste.id)}
                   bgColor="red"
                   icon={FaTrashAlt}
                 />
                 <ActionButton
                   label="Copy"
+                  className="text-xs sm:text-sm"
+                iconSize={14}
                   onClick={() => handleCopy(paste.value)}
                   bgColor="purple"
                   icon={FaCopy}
                 />
                 <ActionButton
                   label="Share"
+                  className="text-xs sm:text-sm"
+                iconSize={14}
                   onClick={() => handleShare(paste)}
                   bgColor="blue"
                   icon={FaShareAlt}
                 />
               </div>
 
-              <div className="text-gray-500 text-sm mt-3">
+              <div className="text-gray-500 text-xs md:text-sm mt-2 md:mt-3">
                 Created on: {formatDate(paste.createdAt)}
               </div>
             </div>
