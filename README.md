@@ -22,14 +22,14 @@ A simple and efficient Paste App built with **React, Redux, and LocalStorage** t
 
 1️⃣ Clone the repository:  
 
-- git clone https://github.com/your-username/paste-app.git
+git clone https://github.com/your-username/paste-app.git
 cd paste-app
 
 2️⃣ Install dependencies:
-- npm install
+ npm install
 
 3️⃣ Start the development server:
-- npm run dev
+ npm run dev
 
 
 📌 How It Works:
@@ -42,6 +42,7 @@ cd paste-app
 🚀 Deployment
 This project is deployed using Vercel. You can deploy your own version by running:
  
+
  
 💡 What I Learned:
 📌 Managing state efficiently with Redux
