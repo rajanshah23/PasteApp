@@ -31,7 +31,12 @@ cd paste-app
 3️⃣ Start the development server:
 -npm run dev
 
- ##📌 How It Works
+
+
+
+
+
+##📌 How It Works
 ---Users can create and save text snippets locally.
 ---Each snippet can be edited or deleted.
 ---Copy to clipboard functionality allows easy sharing.
