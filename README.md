@@ -34,25 +34,4 @@ cd paste-app
 
 
 
-
-
-##📌 How It Works
----Users can create and save text snippets locally.
----Each snippet can be edited or deleted.
----Copy to clipboard functionality allows easy sharing.
----Search bar helps users find pastes quickly.
-🚀 Deployment
-This project is deployed using Vercel. You can deploy your own version by running:
-- vercel
-
  
-💡 What I Learned
-📌 Managing state efficiently with Redux
-📌 Handling URL parameters for editing and viewing pastes
-📌 Storing and retrieving data from LocalStorage
-📌 Implementing seamless copy & share functionality
-
-
-⭐ Don't forget to star the repo if you find it useful! ⭐
--
-Replace `"your-vercel-deployment-link"` and `"https://github.com/your-username/paste-app.git"` with the actual links to your deployment and repository. Let me know if you need any modifications! 🚀
