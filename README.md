@@ -31,17 +31,19 @@ cd paste-app
 3️⃣ Start the development server:
 - npm run dev
 
+
 📌 How It Works:
--Users can create and save text snippets locally.
--Each snippet can be edited or deleted.
--Copy to clipboard functionality allows easy sharing.
--Search bar helps users find pastes quickly.
+- Users can create and save text snippets locally.
+- Each snippet can be edited or deleted.
+- Copy to clipboard functionality allows easy sharing.
+- Search bar helps users find pastes quickly.
+
 
 🚀 Deployment
 This project is deployed using Vercel. You can deploy your own version by running:
  
  
-💡 What I Learned
+💡 What I Learned:
 📌 Managing state efficiently with Redux
 📌 Handling URL parameters for editing and viewing pastes
 📌 Storing and retrieving data from LocalStorage
